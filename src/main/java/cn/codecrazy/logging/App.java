@@ -6,8 +6,13 @@ package cn.codecrazy.logging;
  */
 public class App 
 {
+    private static final Logger logger = Logger.getLogger();
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        logger.trace("Hello, SimpleLog!");
+        logger.debug("Hello, SimpleLog!");
+        logger.info("Hello, SimpleLog!");
+        logger.warn("Hello, SimpleLog!");
+        logger.error("Hello, SimpleLog!");
     }
 }
